@@ -1,5 +1,6 @@
 import adapter from '@sveltejs/adapter-auto';
 import sveltePreprocess from 'svelte-preprocess';
+import { mdsvex } from 'mdsvex';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -9,7 +10,13 @@ const config = {
 		// See https://kit.svelte.dev/docs/adapters for more information about adapters.
 		adapter: adapter()
 	},
-	preprocess: [sveltePreprocess()]
+	extensions: ['.svelte', '.md'], //what to treat as components
+	preprocess: [
+		sveltePreprocess(),
+		mdsvex({ //preprocess markdown to HTML but only .svx files by default, hence adding .md
+			extensions: ['.md']
+		})
+	]
 };
 
 export default config;
