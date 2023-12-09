@@ -1,4 +1,5 @@
-import adapter from '@sveltejs/adapter-auto';
+// adapter ensures every page will be pre-rendered as static HTML at build time.
+import adapter from '@sveltejs/adapter-static';
 import sveltePreprocess from 'svelte-preprocess';
 import { mdsvex } from 'mdsvex';
 
