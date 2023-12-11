@@ -1,7 +1,6 @@
 <script>
-    import MainMegatron from '$lib/components/MainMegatron.svelte';
+    import Landing from '$lib/components/Landing/Landing.svelte';
+    export let data;  //we have access to blog posts here from what's set up in the prpe-loaded +page.js file
 </script>
 
-<h1>Explain Like I'm Human</h1>
-<p>Human Generated, AI Assisted Technical Explanations</p>
-<MainMegatron />
+<Landing {data} />
