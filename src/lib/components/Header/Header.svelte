@@ -24,7 +24,7 @@
 		flex-wrap: wrap;
 		justify-content: space-between;
         color: #FFF;
-        text-shadow: 30px 4px 30px rgba(0, 0, 0, 0.50);
+        text-shadow: 6px 4px 7px rgba(0, 0, 0, 0.80);
         font-family: 'Turret Road', sans-serif;        
         font-size: 32px;
         font-style: normal;
