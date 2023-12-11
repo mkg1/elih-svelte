@@ -1,24 +1,24 @@
 <script>
     export let data;
+    let randomBinaryString = "";
+    function generateRandomBinary() {
+        let binaryLength = Math.floor(Math.random() * (15 - 10 + 1) + 10);
+        for (var i = 0; i < binaryLength; i++) {
+            randomBinaryString += `\u00A0${Math.floor(Math.random() * 2)} `
+        }
+        return randomBinaryString;
+    }
 </script>
 
 <div class="wrapper">
     <div class="landingMenu">
-        <p>hello</p>
         <!-- TODO: account for scenario when there are no blogs to display -->
-        <ul>
-            {#each data.posts as post}
-                <li>
-                    <h2>
-                        <a href={post.path}>
-                            {post.meta.title}
-                        </a>
-                    </h2>
-                    Published {post.meta.date}
-                </li>
-                {/each}
-        </ul>
-
+        {#each data.posts as post}
+        {generateRandomBinary()}
+                <a href={post.path}>
+                    {'\u00A0' + post.meta.title.toUpperCase()}
+                </a>
+        {/each}
     </div>
 </div>
 
@@ -28,13 +28,20 @@
         justify-content: flex-end;
     }
     .landingMenu {
-        /* position: fixed; */
+        padding: 1rem;
         right: 0;
         bottom: 30px;
         width: 80%;
         height: 80%;
         background: rgba(217, 217, 217, 0.4);
-        font-family: 'Turret Road', sans-serif;        
+        font-family: 'Turret Road', sans-serif;   
+        font-size: 24px;
+        letter-spacing: .3rem;
+        color: rgb(255, 255, 255, .4);
+    }
+    a {
+        text-decoration: none;
+        color: white;
     }
 
 </style>
