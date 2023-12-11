@@ -1,10 +1,10 @@
 ---
-title: OOP
+title: Kernel
 date: '2021-12-14'
 categories:
 
 - "numbers"
-- "odd"
+- "even"
 
 ---
 

@@ -4,7 +4,7 @@
 	<nav>
 		<ul>
 			<li>
-				<a href="/blog">Blog</a>
+				<a href="/blog">Posts</a>
 			</li>
 			<li>
 				<a href="/about">About</a>

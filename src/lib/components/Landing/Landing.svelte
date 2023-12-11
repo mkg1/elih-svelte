@@ -1,8 +1,8 @@
 <script>
     export let data;
-    let randomBinaryString = "";
     function generateRandomBinary() {
-        let binaryLength = Math.floor(Math.random() * (15 - 10 + 1) + 10);
+        let randomBinaryString = "";
+        let binaryLength = Math.floor(Math.random() * (15 - 5 + 1) + 10);
         for (var i = 0; i < binaryLength; i++) {
             randomBinaryString += `\u00A0${Math.floor(Math.random() * 2)} `
         }
@@ -14,23 +14,27 @@
     <div class="landingMenu">
         <!-- TODO: account for scenario when there are no blogs to display -->
         {#each data.posts as post}
-        {generateRandomBinary()}
-                <a href={post.path}>
-                    {'\u00A0' + post.meta.title.toUpperCase()}
-                </a>
+            {generateRandomBinary()}
+            <a href={post.path}>
+                {'\u00A0' + post.meta.title.toUpperCase()}
+            </a>
         {/each}
     </div>
 </div>
 
 <style>
     .wrapper {
+        position: relative;
         display: flex;
         justify-content: flex-end;
+        height:auto !important;
+        min-height:100%; /* real browsers */
+        padding-bottom: 255px;    
+
     }
     .landingMenu {
         padding: 1rem;
-        right: 0;
-        bottom: 30px;
+        min-height: 50%;
         width: 80%;
         height: 80%;
         background: rgba(217, 217, 217, 0.4);
