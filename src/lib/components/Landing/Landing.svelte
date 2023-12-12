@@ -16,7 +16,7 @@
         {#each data.posts as post}
             {generateRandomBinary()}
             <a href={post.path}>
-                {'\u00A0' + post.meta.title.toUpperCase()}
+                <span>{'\u00A0' + post.meta.title.toUpperCase()}</span>
             </a>
         {/each}
     </div>
@@ -30,18 +30,23 @@
         height:auto !important;
         min-height:100%; /* real browsers */
         padding-bottom: 255px;    
+    }
 
+    span {
+        color: #efeeb4;
     }
     .landingMenu {
-        padding: 1rem;
+        text-align: right;
+        padding: 3rem 1rem 3rem 3rem;
         min-height: 50%;
         width: 80%;
         height: 80%;
         background: rgba(217, 217, 217, 0.4);
-        font-family: 'Turret Road', sans-serif;   
+        font-family: 'Bungee Hairline', sans-serif; 
         font-size: 24px;
         letter-spacing: .3rem;
         color: rgb(255, 255, 255, .4);
+        box-shadow: 0px 0px 30px 10px rgb(239 238 180 / 80%);
     }
     a {
         text-decoration: none;

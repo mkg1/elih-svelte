@@ -1,6 +1,7 @@
 body {
 	margin: 0;
-	background: #065936;
+	background: #454d66;
+	// background: linear-gradient(rgba(6,89,54,1) 0%, rgba(16,142,89,1) 100%);
 	color: #ffffff;
 	font-family: sans-serif;
 	position: relative;
@@ -15,8 +16,8 @@ main {
 	width: 100%;
 	bottom: 0;
 	padding:30px 0;
-	background: rgb(153, 104, 136, .65);
-	box-shadow: 0px -10px 50px -20px rgb(34, 26, 31, .7);
+	background: rgb(48, 153, 117, .65);
+	box-shadow: 0px -10px 50px -20px rgb(239, 238, 180, .7);
   }
   
   .footer-basic ul {

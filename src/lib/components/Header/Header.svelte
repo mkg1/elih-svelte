@@ -19,13 +19,13 @@
 <style>
 	header {
 		padding: 1rem;
-        margin: 3rem;
+        margin: 1.5rem;
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-between;
         color: #FFF;
         text-shadow: 6px 4px 7px rgba(0, 0, 0, 0.80);
-        font-family: 'Turret Road', sans-serif;        
+        font-family: 'Silkscreen', sans-serif;       
         font-size: 32px;
         font-style: normal;
         font-weight: 200;

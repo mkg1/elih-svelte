@@ -16,3 +16,14 @@
         </li>
         {/each}
 </ul>
+
+<style>
+	ul {
+		list-style: none;
+	}
+
+    a { 
+        color: white;
+        text-decoration: none;
+    }
+</style>
