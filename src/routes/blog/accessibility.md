@@ -1,6 +1,6 @@
 ---
 title: Accessibility
-date: '2021-12-14'
+date: 
 categories:
 
 - "numbers"
